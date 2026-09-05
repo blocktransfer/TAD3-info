@@ -1,5 +1,7 @@
 # TAD3 Explorer
 
+> **Unfinished, unvetted development prototype — not for production use.** This implementation has significant unresolved compliance issues. It has not been completed, vetted, audited, or approved for use. Its output, calculations, labels, and claims must not be treated as substantiated, authoritative, or reliable. Do not rely on it for ownership records, securities balances, transfers, compliance decisions, or as a substitute for verified records or a properly reviewed system.
+
 A read-only explorer for TAD3 assets and public Stellar Mainnet records. Built with native HTML, CSS, and JavaScript; no wallet, API credentials, or build step required.
 
 Run `npm start` with Node.js and Python 3 installed, then open [the local explorer](http://localhost:8080). Run `npm test` for identifier routing, amount precision, and data-source boundary tests. Any static web host can serve the application files; hash-based routes need no server rewrites.
