@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore TAD3 assets, public accounts, and Stellar ledger activity.">
+  <title>TAD3 Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="mark" aria-hidden="true">T</span> TAD3 <span class="muted">explorer</span></a>
+    <nav aria-label="Main"><a href="#">Overview</a><a href="https://tad3.dev/">Documentation ↗</a></nav>
+    <span class="network"><span aria-hidden="true">●</span> Stellar Mainnet</span>
+  </header>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PUBLIC RECORDS. DIRECT OWNERSHIP.</p>
+      <h1>Follow the ledger.</h1>
+      <p class="intro">Explore the assets and accounts behind TAD3.</p>
+      <form id="search" role="search">
+        <label class="sr-only" for="query">Asset code, public account, transaction hash, or ledger number</label>
+        <input id="query" placeholder="Asset code, account, transaction hash, or ledger…" autocomplete="off" required>
+        <button type="submit">Explore <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="hint">Try <a href="#asset/1846058ORD">1846058ORD</a> or <a href="#account/GDRM3MK6KMHSYIT4E2AG2S2LWTDBJNYXE4H72C7YTTRWOWX5ZBECFWO7">the issuer account</a></p>
+    </section>
+    <div class="view-header"><span id="status" role="status" aria-live="polite">Connecting to Horizon…</span><button id="refresh" class="secondary">Refresh ↻</button></div>
+    <section id="content" aria-label="Explorer results" aria-busy="true"></section>
+  </main>
+  <footer><span>TAD3 <span class="muted">/ An open view of the ledger</span></span><p>Public data from Stellar Horizon. Coverage starts with the BlockTransfer issuer; it is not a directory of every TAD3 deployment.</p></footer>
+</body>
+</html>
